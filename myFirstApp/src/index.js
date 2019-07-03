@@ -12,8 +12,8 @@ ReactDom.render(
     <div>
         <Family lastName="Lima">
             <Member name="Marcos" />
-            {/* <Member name="Dylan" />
-            <Member name="Leandro" /> */}
+            <Member name="Dylan" />
+            <Member name="Leandro" />
         </Family>
         {/* <LimaFamily lastName="Lima"/> */}
         {/* <A value="🐱‍👤🔥"/>
