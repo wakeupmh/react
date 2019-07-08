@@ -4,17 +4,20 @@ import ReactDom from 'react-dom'
 // import MultipleComponents from './components/MultipleElements'
 // import A, { CompB as B } from './components/TwoComponents'
 // import LimaFamily from './components/LimaFamily' 
-import Family from './components/Family'
-import Member from './components/Member'
-
+// import Family from './components/Family'
+// import Member from './components/Member'
+// import ComponentFuctional from './components/ComponentFuctional'
+import Dad from './components/Dad'
 const element = document.getElementById('root');
 ReactDom.render(
     <div>
-        <Family lastName="Lima">
+        <Dad />
+        {/* <ComponentFuctional/> */}
+        {/* <Family lastName="Lima">
             <Member name="Marcos" />
             <Member name="Dylan" />
             <Member name="Leandro" />
-        </Family>
+        </Family> */}
         {/* <LimaFamily lastName="Lima"/> */}
         {/* <A value="🐱‍👤🔥"/>
         <B value="💨"/> */}
