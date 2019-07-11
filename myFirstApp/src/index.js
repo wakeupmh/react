@@ -9,11 +9,13 @@ import ReactDom from 'react-dom'
 // import ComponentFuctional from './components/ComponentFuctional'
 // import Dad from './components/Dad'
 // import ClassComponent from './components/ClassComponent'
-import Counter from './components/Counter'
+// import Counter from './components/Counter'
+import Hook from './components/Hooks'
 const element = document.getElementById('root');
 ReactDom.render(
     <div>
-        <Counter initialNumber={100}/>
+        <Hook/>
+        {/* <Counter initialNumber={100}/> */}
         {/* <ClassComponent value="I'm component renderized by class"/> */}
         {/* <Dad /> */}
         {/* <ComponentFuctional/> */}
