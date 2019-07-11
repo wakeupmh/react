@@ -7,11 +7,15 @@ import ReactDom from 'react-dom'
 // import Family from './components/Family'
 // import Member from './components/Member'
 // import ComponentFuctional from './components/ComponentFuctional'
-import Dad from './components/Dad'
+// import Dad from './components/Dad'
+// import ClassComponent from './components/ClassComponent'
+import Counter from './components/Counter'
 const element = document.getElementById('root');
 ReactDom.render(
     <div>
-        <Dad />
+        <Counter initialNumber={100}/>
+        {/* <ClassComponent value="I'm component renderized by class"/> */}
+        {/* <Dad /> */}
         {/* <ComponentFuctional/> */}
         {/* <Family lastName="Lima">
             <Member name="Marcos" />
