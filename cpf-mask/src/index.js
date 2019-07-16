@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import InputMasked from './InputMasked'
+import InputMasked from './components/InputMasked'
 import './css/Style.css'
 const element = document.getElementById('root')
 ReactDom.render(
