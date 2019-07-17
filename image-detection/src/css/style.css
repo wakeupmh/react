@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/ubuntu.ttf');
+}
+video{
+    width: 60%;
+    height: 60%;
+    margin-top: 1em;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px #00000085;
+    filter: grayscale(1);
+}
+h2{
+    color: white;
+    font-family: Ubuntu;
+}
+#root{
+    text-align: center;
+}
+body{
+    background-color:#854ed8;
+}
+canvas{
+    position:absolute;
+    left: 13%;
+    font-family: Ubuntu;
+}
