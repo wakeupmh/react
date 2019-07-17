@@ -7,7 +7,7 @@ const VisualRecognitionV3 = require ('watson-developer-cloud/visual-recognition/
     
 let visualRecognition = new VisualRecognitionV3 ({
     version: '2018-03-19', 
-    iam_apikey: 'Pc9INOgn3ZWIRKfyV1xNwHRMvgSzVW8QbwmyMG-6lI19'
+    iam_apikey: '<apiKey>'
 });
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
