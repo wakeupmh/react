@@ -3,9 +3,9 @@
     src: url('../fonts/ubuntu.ttf');
 }
 video{
-    width: 60%;
-    height: 60%;
-    margin-top: 1em;
+    width: 75%;
+    height: 80%;
+    margin-top: 3em;
     border-radius: 8px;
     box-shadow: 1px 1px 10px #00000085;
     filter: grayscale(1);
@@ -21,7 +21,9 @@ body{
     background-color:#854ed8;
 }
 canvas{
-    position:absolute;
-    left: 13%;
+    width: 90%;
+    position: absolute;
+    left: 5%;
     font-family: Ubuntu;
+    top: 0;
 }
