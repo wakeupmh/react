@@ -20,9 +20,9 @@
     grid-column: span 3;
 }
 .button.operation{
-    background-color: #fa8231;
+    background: linear-gradient(to right, #ff9472, #f2709c);
     color:#fff;
 }
 .button.operation:active{
-    background-color: #fa8231cc;
+    background: linear-gradient(to right, #dc8468, #bb5678);
 }
