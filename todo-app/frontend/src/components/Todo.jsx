@@ -30,7 +30,6 @@ export default class Todo extends Component{
             .then(resp=> this.refresh())
     }
     handleRemove(todo){
-        console.log(todo)
         axios.delete(`${URL}/${todo._id}`)
             .then(resp=> this.refresh())
     }

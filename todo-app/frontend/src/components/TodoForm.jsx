@@ -1,5 +1,7 @@
 import React from 'react'
 import {Container,Row, Col, InputGroup, FormControl} from 'react-bootstrap'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faPlus} from '@fortawesome/fontawesome-free-solid'
 import TextButton from './TextButton'
 export default props =>
     <div className='div-todo-form'>
@@ -15,7 +17,7 @@ export default props =>
                             value={props.description}/>
                         <TextButton 
                             variant='secondary' 
-                            text='novo lembrete'
+                            text={<FontAwesomeIcon icon={faPlus}/>}
                             onClick={props.handleAdd}/>
                     </InputGroup>
                 </Col>
