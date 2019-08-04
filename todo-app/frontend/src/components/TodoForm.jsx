@@ -14,8 +14,8 @@ export default props =>
                         />
                         <TextButton 
                             variant='secondary' 
-                            text='Inserir lembrete'
-                            onClick={()=> console.log('alo')}/>
+                            text='novo lembrete'
+                            onClick={props.handleAdd}/>
                     </InputGroup>
                 </Col>
             </Row> 
