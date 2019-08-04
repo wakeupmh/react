@@ -1,17 +1,41 @@
 import React from 'react'
-import {Container,Row, Col, InputGroup, FormControl} from 'react-bootstrap'
-export default props =>
-    <div>
-        <Container>
-            <Row className="justify-content-md-center">
-                <Col xs='12' sm='9' md='10'>
-                    <InputGroup className="mb-3">
-                        <InputGroup.Prepend>
-                            <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                        </InputGroup.Prepend>
-                        <FormControl type='text' aria-label="Text input with checkbox" />
-                    </InputGroup>
-                </Col>
-            </Row> 
-        </Container>
-    </div>
+import {Table} from 'react-bootstrap'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faTrash} from '@fortawesome/fontawesome-free-solid'
+import TextButton from './TextButton'
+
+export default props =>{
+    const list = props.list || []
+    const renderRows = ()=>{
+        return list.map(todo =>(
+            <tr key={todo._id}>
+                <td>{todo.description}</td>
+                <td>
+                    <TextButton
+                        variant='danger'
+                        text={<FontAwesomeIcon icon={faTrash}/>}
+                        onClick={()=>props.handleRemove(todo)}/>
+                </td>
+            </tr>
+        ))
+    }
+    if(props.list.length > 0){
+        return(
+            <div>
+                <Table variant='dark' responsive>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {renderRows()}
+                    </tbody>
+                </Table>
+            </div>
+        )
+    }else
+        return false
+    
+}
