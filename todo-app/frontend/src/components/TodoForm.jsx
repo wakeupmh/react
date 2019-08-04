@@ -8,10 +8,11 @@ export default props =>
                 <Col xs='12' sm='9' md='10'>
                     <InputGroup className="mb-3">
                         <FormControl
-                        placeholder="Não se esqueça de..."
-                        aria-label="Não se esqueça de..."
-                        aria-describedby="Não se esqueça de..."
-                        />
+                            placeholder="Não se esqueça de..."
+                            aria-label="Não se esqueça de..."
+                            aria-describedby="Não se esqueça de..."
+                            onChange={props.handleChange}
+                            value={props.description}/>
                         <TextButton 
                             variant='secondary' 
                             text='novo lembrete'
