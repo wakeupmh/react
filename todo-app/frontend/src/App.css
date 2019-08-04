@@ -10,3 +10,16 @@
 .div-todo-form{
   margin-top:2em;
 }
+.td-flex{
+  display: flex;
+  justify-content: center;
+}
+.td-flex button{
+  margin-right: 5px;
+}
+table th, .table thead th, .table th{
+  border:0px;
+}
+table{
+  text-align: center
+}
