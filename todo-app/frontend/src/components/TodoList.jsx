@@ -9,18 +9,21 @@ export default props =>{
     const renderRows = ()=>{
         return list.map(todo =>(
             <tr key={todo._id}>
-                <td>{todo.description}</td>
+                <td className={todo.done ? 'markedAsDone':''}>{todo.description}</td>
                 <td className='td-flex'>
                     <TextButton
                         variant='success'
+                        hide={todo.done}
                         text={<FontAwesomeIcon icon={faCheck}/>}
                         onClick={()=>props.handleMarkAsDone(todo)}/>
                     <TextButton
                         variant='warning'
+                        hide={!todo.done}
                         text={<FontAwesomeIcon icon={faUndo}/>}
                         onClick={()=>props.handleMarkAsPending(todo)}/>
                     <TextButton
                         variant='danger'
+                        hide={!todo.done}
                         text={<FontAwesomeIcon icon={faTrash}/>}
                         onClick={()=>props.handleRemove(todo)}/>
                 </td>

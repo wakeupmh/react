@@ -23,3 +23,7 @@ table th, .table thead th, .table th{
 table{
   text-align: center
 }
+.markedAsDone{
+  text-decoration:line-through;
+  color:#777;
+}
